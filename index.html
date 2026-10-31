@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeanWay Travels — Your Journey, Your Memories, Your Way</title>
+<meta name="description" content="DeanWay Travels — cruises, resorts and vacations planned by Jon Dean, independent agent with Cruise Brothers, trusted since 1972.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">DW</span>
+      <span class="brand-text">DeanWay <em>Travels</em></span>
+    </a>
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#group-cruise">Sail with Jon</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-call" href="tel:+18127467175">📞 812-746-7175</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO — Gemma, full screen, nothing else -->
+  <section class="hero hero-gemma">
+    <video class="hero-bg" autoplay muted loop playsinline preload="auto" poster="assets/gemma-face.jpg">
+      <source src="assets/gemma-talk.mp4" type="video/mp4">
+    </video>
+    <button class="voice-toggle off" id="voice-toggle" type="button" aria-label="Hear Gemma's welcome">🔇</button>
+  </section>
+
+  <!-- INTRO — everything below her -->
+  <section class="section intro">
+    <div class="wrap">
+      <p class="kicker">DeanWay Travels</p>
+      <h1>Your Journey, your memories, your way.</h1>
+      <p class="lede">Cruises, resorts, and theme-park adventures — planned around you by Jon Dean, independent agent with Cruise Brothers, trusted since 1972.</p>
+      <div class="cta-row intro-ctas">
+        <a class="btn btn-gold" href="#quote">Plan My Trip</a>
+        <a class="btn btn-ghost" href="https://deanwaytravel.cruisebrothers.com" target="_blank" rel="noopener">Browse &amp; Book Online</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TALK TO GEMMA -->
+  <section id="talk" class="section talk">
+    <div class="wrap">
+      <p class="kicker">Talk to Gemma</p>
+      <h2>She knows travel. Ask her anything.</h2>
+      <p class="section-sub">Destinations, cruise lines, resorts, theme parks — or tell her about your trip and she'll get Jon looped in.</p>
+      <div class="chat-box">
+        <div class="chat-tools">
+          <button class="chat-tool" id="chat-voice" type="button" aria-label="Mute Gemma's voice">🔊</button>
+          <button class="chat-tool chat-human" id="chat-human" type="button">📞 Talk to a real person</button>
+        </div>
+        <div class="chat-log" id="chat-log" aria-live="polite"></div>
+        <form class="chat-form" id="chat-form">
+          <input class="chat-input" id="chat-input" type="text" placeholder="Ask Gemma about your trip…" autocomplete="off" maxlength="500">
+          <button class="btn btn-gold" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trust">
+    <div class="wrap trust-inner">
+      <p class="trust-line">Backed by <strong>Cruise Brothers</strong> — trusted since 1972.</p>
+      <ul class="trust-facts">
+        <li>Family-owned agency</li>
+        <li>Nearly a million travelers served</li>
+        <li>Proud affiliate of the $21B Travel Leaders Network</li>
+        <li>Top producer with all major cruise lines</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="wrap">
+      <h2>What I plan</h2>
+      <p class="section-sub">One call or message — I take it from there.</p>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">🚢</div>
+          <h3>Cruises</h3>
+          <p>Caribbean, Alaska, Europe &amp; beyond — every major line, cabins picked for how you actually travel.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🏝️</div>
+          <h3>Resorts &amp; All-Inclusives</h3>
+          <p>Beach escapes, family resorts and adults-only retreats, matched to your budget and your vibe.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">👥</div>
+          <h3>Group Travel</h3>
+          <p>Family reunions, girls' getaways, church groups, hosted sailings — I wrangle the whole crew.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🎢</div>
+          <h3>Theme Parks &amp; Orlando</h3>
+          <p>Universal Orlando vacations — tickets, hotels &amp; packages. Epic Universe, Islands of Adventure, Volcano Bay and more.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">💍</div>
+          <h3>Honeymoons &amp; Celebrations</h3>
+          <p>Once-in-a-lifetime trips done right — anniversaries, birthdays, bucket-list sailings.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GROUP CRUISE SPOTLIGHT -->
+  <section id="group-cruise" class="section spotlight">
+    <div class="wrap">
+      <p class="kicker gold-text">Hosted group sailing</p>
+      <h2>⛵ Sail with Jon — Star of the Seas</h2>
+      <p class="spotlight-details">
+        <strong>7-night Eastern Caribbean &amp; Perfect Day</strong><br>
+        Departs <strong>Sunday, June 13, 2027</strong> · Returns June 20<br>
+        Roundtrip from Port Canaveral (Orlando)<br>
+        Perfect Day at CocoCay → St. Thomas → St. Maarten
+      </p>
+      <p>I'm holding group space on Royal Caribbean's newest ship and sailing with the group myself. Group rates are being finalized right now — join the interest list and you'll get first pick of cabins when they drop.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="#quote" data-interest="sail-with-jon">Join the Interest List</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step"><span class="step-n">1</span><h3>Tell me your dream trip</h3><p>Call, text, or fill out the form below. Dates, budget, who's going — whatever you've got.</p></div>
+        <div class="step"><span class="step-n">2</span><h3>I handle the planning</h3><p>Options, pricing and the fine print — sorted and explained in plain English.</p></div>
+        <div class="step"><span class="step-n">3</span><h3>You travel. I'm on call.</h3><p>From booking to boarding to back home, you've got a human in your corner.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD FORM -->
+  <section id="quote" class="section form-section">
+    <div class="wrap">
+      <h2>Get a free quote</h2>
+      <p class="section-sub">Tell me what you're dreaming about — I'll be in touch personally.</p>
+      <form id="lead-form" novalidate>
+        <div class="field-row">
+          <label>Full name *
+            <input type="text" name="name" required autocomplete="name" placeholder="Jane Smith">
+          </label>
+          <label>Phone *
+            <input type="tel" name="phone" required autocomplete="tel" placeholder="(555) 123-4567">
+          </label>
+        </div>
+        <label>Email
+          <input type="email" name="email" autocomplete="email" placeholder="you@email.com">
+        </label>
+        <div class="field-row">
+          <label>I'm interested in
+            <select name="interest" id="interest">
+              <option value="cruise">A cruise</option>
+              <option value="resort">Resort / all-inclusive</option>
+              <option value="sail-with-jon">⛵ Sail with Jon group cruise (June 2027)</option>
+              <option value="honeymoon">Honeymoon / celebration</option>
+              <option value="group">Group travel</option>
+              <option value="other">Something else</option>
+            </select>
+          </label>
+          <label>When do you want to go?
+            <input type="text" name="dates" placeholder="e.g. Spring 2027, flexible">
+          </label>
+        </div>
+        <label>Anything I should know?
+          <textarea name="message" rows="4" placeholder="Who's traveling, budget range, must-haves…"></textarea>
+        </label>
+        <button type="submit" class="btn btn-gold btn-submit">Send My Request</button>
+        <p class="form-note" id="form-note">Prefer to talk? Call or text <a href="tel:+18127467175"><strong>812-746-7175</strong></a>.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="wrap">
+      <h2>Reach Jon</h2>
+      <div class="contact-grid">
+        <a class="contact-card" href="tel:+18127467175"><span class="card-icon">📞</span><strong>812-746-7175</strong><span>Call or text</span></a>
+        <a class="contact-card" href="mailto:jondean213@gmail.com"><span class="card-icon">✉️</span><strong>Email me</strong><span>jondean213@gmail.com</span></a>
+        <a class="contact-card" href="https://deanwaytravel.cruisebrothers.com" target="_blank" rel="noopener"><span class="card-icon">🌐</span><strong>Book online</strong><span>Cruise Brothers site</span></a>
+      </div>
+      <div class="socials">
+        <a href="https://instagram.com/deanwaytravels" target="_blank" rel="noopener" aria-label="Instagram">📸 Instagram</a>
+        <a href="https://www.facebook.com/1254466474423046" target="_blank" rel="noopener" aria-label="Facebook">📘 Facebook</a>
+        <a href="https://www.threads.com/@jondean213" target="_blank" rel="noopener" aria-label="Threads">🧵 Threads</a>
+        <a href="https://youtube.com/@DeanWayTravels" target="_blank" rel="noopener" aria-label="YouTube">▶️ YouTube</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>DeanWay Travels</strong> — Your Journey, your memories, your way.</p>
+    <p class="fine">Jon Dean, independent agent with Cruise Brothers · IATA 41751032<br>© 2026 DeanWay Travels. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
