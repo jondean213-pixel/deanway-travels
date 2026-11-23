@@ -82,16 +82,7 @@ var COMMAND_CENTER_URL = "https://script.google.com/macros/s/AKfycbw_qVZWlqwZgmK
 /* ---- Gemma's voice ---- */
 (function () {
   var voiceToggle = document.getElementById("voice-toggle");
-  var gemmaAudio = null;
-
-  function getAudio() {
-    if (!gemmaAudio) {
-      gemmaAudio = new Audio("assets/gemma-welcome.mp3");
-      gemmaAudio.preload = "auto";
-      gemmaAudio.addEventListener("ended", function () { setToggle(false); });
-    }
-    return gemmaAudio;
-  }
+  var gemmaVideo = document.querySelector(".hero-bg");
 
   function setToggle(playing) {
     if (!voiceToggle) return;
@@ -103,14 +94,14 @@ var COMMAND_CENTER_URL = "https://script.google.com/macros/s/AKfycbw_qVZWlqwZgmK
   if (voiceToggle) {
     voiceToggle.addEventListener("click", function (e) {
       e.stopPropagation();
-      var a = getAudio();
-      if (a.paused) {
-        a.currentTime = 0;
-        a.play().catch(function () {});
+      if (!gemmaVideo) return;
+      if (gemmaVideo.muted) {
+        gemmaVideo.currentTime = 0;
+        gemmaVideo.muted = false;
+        gemmaVideo.play().catch(function () {});
         setToggle(true);
       } else {
-        a.pause();
-        a.currentTime = 0;
+        gemmaVideo.muted = true;
         setToggle(false);
       }
     });
