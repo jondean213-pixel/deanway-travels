@@ -35,7 +35,7 @@ var COMMAND_CENTER_URL = "https://script.google.com/macros/s/AKfycbw_qVZWlqwZgmK
     if (!COMMAND_CENTER_URL) {
       // Not wired yet — don't lose the lead, point at Jon directly.
       note('Thanks ' + escapeHtml(data.name.split(' ')[0]) + '! The online form is being connected — ' +
-           'please call or text <a href="tel:+18127467175"><strong>812-746-7175</strong></a> and Jon will take care of you personally.', false);
+           'please call or text <a href="tel:+18123064385"><strong>812.306.4385</strong></a> and Jon will take care of you personally.', false);
       return;
     }
 
@@ -53,7 +53,7 @@ var COMMAND_CENTER_URL = "https://script.google.com/macros/s/AKfycbw_qVZWlqwZgmK
     }).catch(function () {
       btn.disabled = false;
       btn.textContent = 'Send My Request';
-      note('Hmm, that didn\'t go through. Please call or text <a href="tel:+18127467175"><strong>812-746-7175</strong></a> instead — Jon will help you directly.', true);
+      note('Hmm, that didn\'t go through. Please call or text <a href="tel:+18123064385"><strong>812.306.4385</strong></a> instead — Jon will help you directly.', true);
     });
   });
 
@@ -69,7 +69,7 @@ var COMMAND_CENTER_URL = "https://script.google.com/macros/s/AKfycbw_qVZWlqwZgmK
     form.outerHTML =
       '<div class="form-success"><h3>Thanks, ' + first + '! 🎉</h3>' +
       '<p>Your request is in. Jon will reach out personally — usually within a day.</p>' +
-      '<p class="form-note">Can\'t wait? Call or text <a href="tel:+18127467175"><strong>812-746-7175</strong></a>.</p></div>';
+      '<p class="form-note">Can\'t wait? Call or text <a href="tel:+18123064385"><strong>812.306.4385</strong></a>.</p></div>';
   }
 
   function escapeHtml(s) {
@@ -159,7 +159,7 @@ var COMMAND_CENTER_URL = "https://script.google.com/macros/s/AKfycbw_qVZWlqwZgmK
 
   if (humanBtn) {
     humanBtn.addEventListener("click", function () {
-      addMsg("ai", "Of course — Jon is a real person and he'd love to talk. Call or text him at 812-746-7175, or leave your number in the Plan My Trip form below and he'll call you back, usually within a day.");
+      addMsg("ai", "Of course — Jon is a real person and he'd love to talk. Call or text him at 812.306.4385, or leave your number in the Plan My Trip form below and he'll call you back, usually within a day.");
       speak("Of course — Jon is a real person and he'd love to talk. Call or text him at 8 1 2, 7 4 6, 7 1 7 5.");
     });
   }
@@ -200,7 +200,7 @@ var COMMAND_CENTER_URL = "https://script.google.com/macros/s/AKfycbw_qVZWlqwZgmK
       })
       .catch(function () {
         thinking.remove();
-        addMsg("ai", "Hmm, I can't reach my brain right now. Call or text Jon at 812-746-7175 and he'll take care of you.");
+        addMsg("ai", "Hmm, I can't reach my brain right now. Call or text Jon at 812.306.4385 and he'll take care of you.");
       });
   });
 })();
